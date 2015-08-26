@@ -19,3 +19,52 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/" for ::1 at 2015-08-26 14:55:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 60ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ship/index" for ::1 at 2015-08-26 14:55:56 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2160ms (Views: 2158.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-26 14:55:59 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-08-26 14:55:59 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-26 14:55:59 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-26 14:55:59 -0500
+
+
+Started GET "/" for ::1 at 2015-08-26 14:59:45 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 105ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-26 14:59:46 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 309ms (Views: 308.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-26 14:59:49 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-26 14:59:56 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
