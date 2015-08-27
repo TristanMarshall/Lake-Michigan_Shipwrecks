@@ -14,3 +14,23 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require underscore
+//= require backbone
+
+$(document).ready(function(){
+
+  $.ajax({
+    beforeSend: function(xhr){
+      xhr.setRequestHeader('Authorization', 'Token token=b96e5fe0e1e3829587bd11767059564d')
+    },
+    type: 'GET',
+    url: 'http://localhost:3000/api/ships',
+    dataType: 'json',
+    success: function(data){
+      console.log(data);
+    },
+    error: function(err){
+      console.log(err);
+    }
+  })
+});
