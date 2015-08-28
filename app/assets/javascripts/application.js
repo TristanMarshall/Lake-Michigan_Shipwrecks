@@ -19,7 +19,7 @@
 
 $(document).ready(function(){
 
-  $.ajax({
+  $.ajaxSetup({
     beforeSend: function(xhr){
       xhr.setRequestHeader('Authorization', 'Token token=b96e5fe0e1e3829587bd11767059564d')
     },
@@ -33,4 +33,18 @@ $(document).ready(function(){
       console.log(err);
     }
   })
+
+  $.ajax({
+    type: 'GET',
+    url: 'http://localhost:3000/api/ships',
+    dataType: 'json',
+    success: function(data){
+      console.log(data);
+    },
+    error: function(err){
+      console.log(err);
+    }
+  })
+
+
 });
