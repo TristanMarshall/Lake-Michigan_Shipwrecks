@@ -1,62 +1,18 @@
-<div class="mapDiv">This is where the google map will be</div>
-
-<div class="infoDiv1">This is where the Ship name and Ship Coordinates will be</div>
-
-<div class="infoDiv2">this is where the description of the ship will be</div>
-
-<div class="infoDiv3">This is where a list of all ships will be listed. <br> If possible I would like to be able to click on the ships name and have the ships description/name/coordinates displayed</div>
-
-
-<section class="wreck">
-  <!-- render ship here -->
-
-</section>
-
-
-
 
 
 <script type="text/javascript">
-
-// CREATE MODEL
-// create a name space for blueprints(or (ruby) classes)
-  var sunk = sunk || {};
-// give a place to put instantiated objects
-  var active = active || {};
-// create model
-  sunk.wreckModel = Backbone.Model.extend({
-//url of API of data wanted
-    url: '/api/ships',
-//initialize constructor with Backbone
-    initialize: function(){
-// 'name', 'latitude', 'longitude', 'yearlost', 'description'
-      console.log('model is instantiated');
-    }
-  });
-
-
-
-
-
-  //create view
-
-  //a view can have a model attribute, template attribute
-  //el ($el) our DOM element
-  sunk.wreckView = Backbone.View.extend({
-    initialize: function() {
-      var that = this; //reference to view
-      this.model.on('change', function() {
-        that.render(); //this will render view
-      });
-    },
-    render: function() {
-      console.log('rendering view');
-    }
-  });
-
-  $(document).ready(function(){
-
-
-  });
-
+//Here a namespace is created in order to render our instance variable throughout our application (in JS)
+  var global = global || {};
+  global.apiKey = '<%= @key %>';
 </script>
+
+<div id="map">This is where the google map will be</div>
+<div class="infoDiv1">This is where the Ship name and Ship Coordinates will be</div>
+<div class="infoDiv2">this is where the description of the ship will be</div>
+<div class="infoDiv3">
+
+  <script type="text/template" id="wrecks">
+    <li>Name: <%%=name%>, Latitude: <%%=latitude%>, Longitude: <%%=longitude%>, Year lost: <%%=yearlost%>, description: <%%=description%></li>
+  </script>
+
+</div>

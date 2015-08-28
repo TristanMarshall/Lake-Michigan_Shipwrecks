@@ -1,19 +1,22 @@
 class Api::ShipsController < ApplicationController
+
 before_action :restrict_access
 respond_to :json
 
-#renders all data to index
+  #renders all data to index
   def index
+    #below our API key is assigned to an instance variable...
+
     render json: Ship.all
   end
 
-#render data
+  #render data
   def show
     ship = Ship.find(params[:id])
     render json: ship
   end
 
-#create new object within model
+  #create new object within model
   def create
     @ship = Ship.create({
       :name => params[:name],
@@ -41,7 +44,7 @@ respond_to :json
     :description => params[:description]
   })
     @ship.save
-  render json: @ship
+    render json: @ship
     end
 
 #destroy object within model
@@ -56,7 +59,6 @@ respond_to :json
   def restrict_access
     authenticate_or_request_with_http_token do |token, options|
       ApiKey.exists?(access_token: token)
-
     end
   end
 end

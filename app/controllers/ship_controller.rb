@@ -1,5 +1,10 @@
 class ShipController < ApplicationController
+
+
   def index
-    @ships = Ship.all
+
+    @key = ENV['API_KEY']
+
   end
+
 end

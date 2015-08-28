@@ -20,9 +20,9 @@
   background-color: gray;
 }
 
-.mapDiv {
-  width: 66%;
-  height: 500px;
+#map {
+  width: 45%;
+  height: 550px;
   background-color: gray;
   margin-top: 5%;
   margin-left: 1%;

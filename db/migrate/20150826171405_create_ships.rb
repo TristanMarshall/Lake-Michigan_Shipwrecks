@@ -2,8 +2,8 @@ class CreateShips < ActiveRecord::Migration
   def change
     create_table :ships do |t|
       t.string :name
-      t.float :latitude
-      t.float :longitude
+      t.string :latitude
+      t.string :longitude
       t.integer :yearlost
       t.string :description
 

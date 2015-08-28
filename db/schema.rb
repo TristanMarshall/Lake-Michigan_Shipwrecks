@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 20150827170556) do
 
   create_table "ships", force: :cascade do |t|
     t.string   "name"
-    t.float    "latitude"
-    t.float    "longitude"
+    t.string   "latitude"
+    t.string   "longitude"
     t.integer  "yearlost"
     t.string   "description"
     t.datetime "created_at",  null: false

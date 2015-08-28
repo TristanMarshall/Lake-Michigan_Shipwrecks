@@ -19,9 +19,10 @@
 
 $(document).ready(function(){
 
+
   $.ajaxSetup({
     beforeSend: function(xhr){
-      xhr.setRequestHeader('Authorization', 'Token token=b96e5fe0e1e3829587bd11767059564d')
+      xhr.setRequestHeader('Authorization', 'Token token=' + global.apiKey)
     },
     type: 'GET',
     url: 'http://localhost:3000/api/ships',
