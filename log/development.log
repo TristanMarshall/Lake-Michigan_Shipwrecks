@@ -8190,3 +8190,1762 @@ Processing by Api::ShipsController#index as JSON
   [1m[35mApiKey Exists (1.9ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
   [1m[36mShip Load (0.8ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
 Completed 200 OK in 10ms (Views: 4.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:00:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 694ms (Views: 668.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-9009830c639e761de276552a1a50800779ee8639cdb6463f37594c371bc551f5.js?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:00:42 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:00:42 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.9ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (1.2ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 104ms (Views: 56.4ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:02:01 -0500
+Processing by Api::ShipsController#index as HTML
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:05:33 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 354ms (Views: 352.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/ship.self-c751ee4c78d42fbe94ed955ead9ef0143edcc6cf8c5bf6745d63ee12632fa4de.js?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:05:33 -0500
+
+
+Started GET "/" for ::1 at 2015-08-28 14:05:48 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 315ms (Views: 313.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-5143fd59466a20ae2c5dfb9e7b60ee2a544b3e0de2d72abd1ceb020dc2f8984a.js?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:05:48 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:05:48 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:05:48 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.5ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:09:45 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 280ms (Views: 279.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/ship.self-6bb08c84c2e2f452512ae06c25a4054c1780cbc8fab31448d73977fa59fd3635.js?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:09:45 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:09:45 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:09:45 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (1.1ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (1.1ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:10:50 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 280ms (Views: 279.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/ship.self-9f91afaf9cebc0c2fd3050cbdedeeac001bd2a1a2db6981efe8b5af5a77eb7a5.js?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:10:51 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:10:51 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:10:51 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.7ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:14:32 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 569ms (Views: 563.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/ship.self-c8027c1de93060fce594a71b63dcd7536c67ab606935d15e08cd4c27021b85ed.js?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:14:33 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:14:33 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:14:33 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (1.7ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.7ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 10ms (Views: 4.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:15:25 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/ship.self-c8027c1de93060fce594a71b63dcd7536c67ab606935d15e08cd4c27021b85ed.js?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:15:25 -0500
+
+
+Started GET "/" for ::1 at 2015-08-28 14:15:55 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 129ms (Views: 128.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/ship.self-c8027c1de93060fce594a71b63dcd7536c67ab606935d15e08cd4c27021b85ed.js?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:15:55 -0500
+
+
+Started GET "/" for ::1 at 2015-08-28 14:16:05 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/ship.self-c8027c1de93060fce594a71b63dcd7536c67ab606935d15e08cd4c27021b85ed.js?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:16:05 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:17:58 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:17:58 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 333ms (Views: 332.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:18:01 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:18:01 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.7ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.6ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/ship.self-697dd786975fcf63ae2f80eafbb884e512dce4ef789bbaaeb7d4f877cb9845a2.js?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:18:01 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:18:01 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:18:01 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.3ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:22:18 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 599ms (Views: 592.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/ship.self-baea6e425c800d748d60721c2acacbfb40990dfffdec02b57636bde78b5fe18a.js?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:22:19 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:22:19 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.6ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (1.0ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 10ms (Views: 4.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:23:00 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 230ms (Views: 229.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-c695fc1cc23eb41ad29ae19f5aa1a995ca858063ad778778fdcbf489cdbe961d.js?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/assets/application.self-dd62e9f1f411c7fccb8d08ee43eebf7c6c61dc58c6c10c6ca5cce9f252c8ca31.js?body=1" for ::1 at 2015-08-28 14:23:01 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:23:01 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:23:01 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.4ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.6ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:28:50 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 236ms (Views: 235.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/ship.self-3a854fa4d233e537a0fc9cf0e6226715e00b5e16bee18314ce16511db3132f5e.js?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/assets/application.self-95e09e2354380bb54b526b6bbd86ba95dec2f53ee0886209c3b0c877b75b0f7a.js?body=1" for ::1 at 2015-08-28 14:28:50 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:28:50 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:28:50 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.7ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:28:51 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/ship.self-3a854fa4d233e537a0fc9cf0e6226715e00b5e16bee18314ce16511db3132f5e.js?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/assets/application.self-95e09e2354380bb54b526b6bbd86ba95dec2f53ee0886209c3b0c877b75b0f7a.js?body=1" for ::1 at 2015-08-28 14:28:52 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:28:52 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:28:52 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.2ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:31:23 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 425ms (Views: 423.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/ship.self-947d7a85e821531f1f16b6f12f0447b7189aabcf9ebe280ea4f1cbc982ec0bad.js?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:31:23 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:31:23 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:31:23 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.3ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:32:07 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 314ms (Views: 313.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/ship.self-ab96203a37663af40f0d98059c361694edf39ee2a3930421cbc284f3e1332028.js?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:32:07 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:32:07 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:32:07 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.2ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:33:21 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/ship.self-ab96203a37663af40f0d98059c361694edf39ee2a3930421cbc284f3e1332028.js?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:33:21 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:33:22 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:33:22 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.2ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:34:42 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 225ms (Views: 223.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/ship.self-ab96203a37663af40f0d98059c361694edf39ee2a3930421cbc284f3e1332028.js?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/assets/application.self-190bf3ab668f9d583ce485736d3affe3a9fdacf6a502acf50424ade2932e13a3.js?body=1" for ::1 at 2015-08-28 14:34:42 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:34:42 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:34:42 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.2ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.3ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:34:42 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.2ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:35:35 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/ship.self-ab96203a37663af40f0d98059c361694edf39ee2a3930421cbc284f3e1332028.js?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:35:35 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:35:35 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:35:35 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.3ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (1.9ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:35:43 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/ship.self-ab96203a37663af40f0d98059c361694edf39ee2a3930421cbc284f3e1332028.js?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:35:43 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:35:43 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:35:43 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.2ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:36:44 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 243ms (Views: 241.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/ship.self-bcb379c868e35c606153e3732f92b91f928223c86be7dafb36440c9e987d12e7.js?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:36:45 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:36:45 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:36:45 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.6ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:37:28 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 129ms (Views: 128.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/ship.self-bcb379c868e35c606153e3732f92b91f928223c86be7dafb36440c9e987d12e7.js?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:37:28 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:37:28 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:37:29 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.3ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:37:35 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/ship.self-bcb379c868e35c606153e3732f92b91f928223c86be7dafb36440c9e987d12e7.js?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:37:36 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:37:36 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:37:36 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (1.1ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.8ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:47:40 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 95ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/ship.self-bcb379c868e35c606153e3732f92b91f928223c86be7dafb36440c9e987d12e7.js?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:47:40 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:47:40 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:47:40 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.5ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.8ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:48:11 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/ship.self-bcb379c868e35c606153e3732f92b91f928223c86be7dafb36440c9e987d12e7.js?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:48:11 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:48:43 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:49:17 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.3ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:49:19 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 258ms (Views: 257.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-1157572fcd07312852447e42c3fcf8a13d15a0d08deec0ab178d147197b10cae.js?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:49:19 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:49:19 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:49:19 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.3ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.7ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:49:37 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/ship.self-1157572fcd07312852447e42c3fcf8a13d15a0d08deec0ab178d147197b10cae.js?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:49:37 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:49:37 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:50:01 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.2ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.3ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:51:08 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.7ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.6ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 30ms (Views: 8.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:51:35 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 475ms (Views: 474.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/ship.self-bbb5ba77cb99d89738d5a17fb4fee15d0ccb96fff3e371cfeb313b64df0f1993.js?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/assets/application.self-cf8774f5f77a3f925febf888fab1149362c8b076a7f6dd2080bb302f84bb9e75.js?body=1" for ::1 at 2015-08-28 14:51:36 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:51:36 -0500
+Processing by Api::ShipsController#index as JSON
+  Rendered text template (0.0ms)
+Filter chain halted as :restrict_access rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:51:36 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.4ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 8ms (Views: 3.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 14:53:08 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 237ms (Views: 236.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-302531e215fb78d71ee58f023c0b89b952a055f0df4112a5e5f5d4998c83653d.js?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/assets/ship.self-bbb5ba77cb99d89738d5a17fb4fee15d0ccb96fff3e371cfeb313b64df0f1993.js?body=1" for ::1 at 2015-08-28 14:53:08 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 14:53:09 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.3ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:02:05 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 486ms (Views: 480.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-2ea9ba5e82b3d249720b34d4bac19fdb75c1b93ab9dd313a73ed8ba046547a1a.js?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/application.self-d64510fe9072fe79579cca0a6e9237eff268c25ca5dd07b70211a99a4aabcdbc.js?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 15:02:06 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 15:02:06 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.6ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.6ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:02:26 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 319ms (Views: 317.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-28bb547576c1619c1c55e200855bd5e2a7da68afb1474a74b4061d484493d019.js?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/assets/application.self-d64510fe9072fe79579cca0a6e9237eff268c25ca5dd07b70211a99a4aabcdbc.js?body=1" for ::1 at 2015-08-28 15:02:26 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 15:02:26 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (1.8ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:04:16 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 241ms (Views: 239.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/ship.self-3a72b79823e4a4c6251e5b2d37ab6e4f19c60b004d385be20ebc9f98d13ec88a.js?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/assets/application.self-d64510fe9072fe79579cca0a6e9237eff268c25ca5dd07b70211a99a4aabcdbc.js?body=1" for ::1 at 2015-08-28 15:04:16 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 15:04:16 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.3ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:05:48 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 572ms (Views: 566.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-47f1a152ad49d5f17db85d1661f06c33330fb15a19c55b32d53e1122528c0831.js?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/assets/application.self-d64510fe9072fe79579cca0a6e9237eff268c25ca5dd07b70211a99a4aabcdbc.js?body=1" for ::1 at 2015-08-28 15:05:48 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 15:05:48 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.6ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.6ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 15:06:43 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 247ms (Views: 246.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-4793f783b1f2339ab3b2511fe5e2ba6398d577fd9bc60bb6d7bceea175d24976.js?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/gmaps.self-ad846de496a6a65b86b9821f86842e29c3db357843098113e26a77ebb6630516.js?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/assets/application.self-d64510fe9072fe79579cca0a6e9237eff268c25ca5dd07b70211a99a4aabcdbc.js?body=1" for ::1 at 2015-08-28 15:06:43 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 15:06:44 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.2ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 16:36:34 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 531ms (Views: 524.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/gmaps.self-4c573911d75ec0450e93e58deabc5e9c6c40b535be969217023c025cce7e8410.js?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/ship.self-bc85968616beca2dd6b74af9f6a409f59ee4b1665e0d00baa7da106e17360eae.js?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/assets/application.self-d64510fe9072fe79579cca0a6e9237eff268c25ca5dd07b70211a99a4aabcdbc.js?body=1" for ::1 at 2015-08-28 16:36:35 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 16:36:35 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.6ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (1.5ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 16:41:24 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 371ms (Views: 363.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/gmaps.self-d0af4ea760354a9740f4ca82c6fa25fdefe1c0e4377d92faea6c49d0afc484ce.js?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/ship.self-bc85968616beca2dd6b74af9f6a409f59ee4b1665e0d00baa7da106e17360eae.js?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/assets/application.self-d64510fe9072fe79579cca0a6e9237eff268c25ca5dd07b70211a99a4aabcdbc.js?body=1" for ::1 at 2015-08-28 16:41:24 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 16:41:24 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.6ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (1.4ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 9ms (Views: 3.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-28 16:50:19 -0500
+Processing by ShipController#index as HTML
+  Rendered ship/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ship.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/application.self-771addd48c7674930cf0e2843fac6725f074d45efdac12c1fdb850b75e0ac62c.css?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/backbone.self-0b505a72e89152018c40056b6dd713668f96dbf508c0930e6ce7302cb7acfd88.js?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/gmaps.self-d0af4ea760354a9740f4ca82c6fa25fdefe1c0e4377d92faea6c49d0afc484ce.js?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/ship.self-bc85968616beca2dd6b74af9f6a409f59ee4b1665e0d00baa7da106e17360eae.js?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/assets/application.self-d64510fe9072fe79579cca0a6e9237eff268c25ca5dd07b70211a99a4aabcdbc.js?body=1" for ::1 at 2015-08-28 16:50:19 -0500
+
+
+Started GET "/api/ships" for ::1 at 2015-08-28 16:50:20 -0500
+Processing by Api::ShipsController#index as JSON
+  [1m[35mApiKey Exists (0.5ms)[0m  SELECT  1 AS one FROM "api_keys" WHERE "api_keys"."access_token" = $1 LIMIT 1  [["access_token", "b96e5fe0e1e3829587bd11767059564d"]]
+  [1m[36mShip Load (0.6ms)[0m  [1mSELECT "ships".* FROM "ships"[0m
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 1.1ms)

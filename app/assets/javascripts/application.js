@@ -18,35 +18,25 @@
 //= require_tree .
 
 
+//ajaxsetup should never be inside document.ready
+$.ajaxSetup({
+  beforeSend: function(xhr){
+    xhr.setRequestHeader('Authorization', 'Token token=' + global.apiKey)
+  }
+})
+
 $(document).ready(function(){
 
-
-  $.ajaxSetup({
-    beforeSend: function(xhr){
-      xhr.setRequestHeader('Authorization', 'Token token=' + global.apiKey)
-    },
-    type: 'GET',
-    url: 'http://localhost:3000/api/ships',
-    dataType: 'json',
-    success: function(data){
-      console.log(data);
-    },
-    error: function(err){
-      console.log(err);
-    }
-  })
-
-  $.ajax({
-    type: 'GET',
-    url: 'http://localhost:3000/api/ships',
-    dataType: 'json',
-    success: function(data){
-      console.log(data);
-    },
-    error: function(err){
-      console.log(err);
-    }
-  })
-
+  // $.ajax({
+  //   type: 'GET',
+  //   url: 'http://localhost:3000/api/ships',
+  //   dataType: 'json',
+  //   success: function(data){
+  //     console.log(data);
+  //   },
+  //   error: function(err){
+  //     console.log(err);
+  //   }
+  // })
 
 });
