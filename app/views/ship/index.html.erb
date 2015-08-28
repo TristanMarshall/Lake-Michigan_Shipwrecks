@@ -6,13 +6,26 @@
   global.apiKey = '<%= @key %>';
 </script>
 
+
+
+
 <div id="map">This is where the google map will be</div>
+
 <div class="infoDiv1">This is where the Ship name and Ship Coordinates will be</div>
+
 <div class="infoDiv2">this is where the description of the ship will be</div>
+
+
+
 <div class="infoDiv3">
 
+  <ul id="ship-list">
+    <!-- backbone collection will fill this $el -->
+  </ul>
+
+
   <script type="text/template" id="wrecks">
-    <li>Name: <%%=name%>, Latitude: <%%=latitude%>, Longitude: <%%=longitude%>, Year lost: <%%=yearlost%>, description: <%%=description%></li>
+    <li>Name of Wreck: <%%=name%>, Latitude: <%%=latitude%>, Longitude: <%%=longitude%>, Year lost: <%%=yearlost%>, Description: <%%=description%></li>
   </script>
 
 </div>
