@@ -1,4 +1,5 @@
-function initialize() {
+/////////////////////////////////////////////////////////////////////
+function initMap() {
   var mapCanvas = document.getElementById('map');
   var mapOptions = {
      center: new google.maps.LatLng(43.450101, -87.222019),
@@ -6,33 +7,36 @@ function initialize() {
      mapTypeId: google.maps.MapTypeId.ROADMAP
   }
     var map = new google.maps.Map(mapCanvas, mapOptions)
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
+    // 
+    // var marker = new google.maps.Marker({
+    //   position: {lat: 43.45101, lng: -87.222019},
+    //   map: mapOptions,
+    //   title: 'Lake Michigan'
+    // })
+  }
+    google.maps.event.addDomListener(window, 'load', initMap);
 
 
 
-app.mark = {
-  type: 'GET',
-  url: '/api/ships',
-  dataType: 'json',
-  success: function(data){
 
-    for (i=0; i < data.length; i++) {
-      app.latLong = new Object();
-      app.latLong = {
-        latitude: parseFloat(data[i].latitude),
-        longitude: parseFloat(data[i].longitude)
-      };
-    }
-};
-
-$.ajax(app.mark);
+//////BELOW FETCH DATA /////////////////////////////////////////////
 
 
-    var marker;
+// app.mark = {
+//   type: 'GET',
+//   url: '/api/ships',
+//   dataType: 'json',
+//   success: function(data){
+//     for (i=0; i < data.length; i++) {
+//       app.latLong = new Object();
+//       app.latLong = {
+//         latitude: parseFloat(data[i].latitude),
+//         longitude: parseFloat(data[i].longitude)
+//       };
+//     }
+//   }
+// }
+//
+// $.ajax(app.mark);
 
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
-        center:
-      });
+///////////////////////////////////////////////////////////////////////

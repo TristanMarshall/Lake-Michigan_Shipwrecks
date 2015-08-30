@@ -13,46 +13,111 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;;
+  background-image: url('http://payload336.cargocollective.com/1/17/574234/9036204/DSC_0631_1250.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.yieldDiv {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 90%;
+  height: 1500px;
+  padding-bottom: 3%;
+  padding-top: 4%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  margin-top: 1%;
+  position: relative;
+
+}
 
 .header {
   width: 100%;
   height: 100px;
-  background-color: gray;
+  margin-top: -2%;
+  margin-bottom: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.mapDiv {
+  width: 90%;
+  height: 1000px:
+  background-color: red;
 }
 
 #map {
   width: 45%;
   height: 550px;
-  background-color: gray;
-  margin-top: 5%;
-  margin-left: 1%;
+  background-color: white;
+  margin-top: -2%;
+  margin-right: 1%;
+  margin-left: 3.5%;
   float: left;
+  border: 15px solid rgb(230, 230, 230);
+  box-shadow: 9px 9px 2px rgba(0, 0, 0, .2);
+
 }
 
 .infoDiv1 {
-  width: 31%;
+  width: 40%;
   height: 100px;
-  background-color: gray;
-  margin-top: 5%;
+  background-color: white;
+  margin-top: -2%;
   margin-left: 1%;
   float: left;
+  border: 15px solid rgb(230, 230, 230);
+  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .2);
 }
 
 .infoDiv2 {
-  width: 31%;
-  height: 390px;
-  background-color: gray;
+  width: 40%;
+  height: 410px;
+  background-color: white;
   margin-top: 1%;
   margin-left: 1%;
   float: left;
+  border: 15px solid rgb(230, 230, 230);
+  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .2);
 }
 
 .infoDiv3 {
-  width: 98%;
-  height: 350px;
-  background-color: gray;
+  width: 88%;
+  height: auto;
+  background-color: white;
   margin-top: 2.5%;
   margin-bottom: 5%;
-  margin-left: 1%;
+  margin-left: 3.5%;
   float: left;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+  border: 15px solid rgb(230, 230, 230);
+  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .2);
+}
+
+.known {
+  color: gray;
+  font-family: Raleway, serif;
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+hr {
+  width: 90%;
+  margin-right: 6%;
+  height: 3px;
+  background-color: rgb(230, 230, 230);
+  border: none;
+}
+
+.wrecks {
+  font-size: 1.5vw;
+  font-family: 'Italiana';
+  color: #505F69;
 }
