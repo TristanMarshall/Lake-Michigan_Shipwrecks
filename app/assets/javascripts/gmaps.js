@@ -7,14 +7,26 @@ function initMap() {
      mapTypeId: google.maps.MapTypeId.ROADMAP
   }
     var map = new google.maps.Map(mapCanvas, mapOptions)
-    // 
-    // var marker = new google.maps.Marker({
-    //   position: {lat: 43.45101, lng: -87.222019},
-    //   map: mapOptions,
-    //   title: 'Lake Michigan'
-    // })
+
   }
     google.maps.event.addDomListener(window, 'load', initMap);
+
+
+    function initMap() {
+      var myLatLng = {lat: 43.787, lng: -86.531};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 7,
+        center: myLatLng
+      });
+
+        var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+    }
+
 
 
 

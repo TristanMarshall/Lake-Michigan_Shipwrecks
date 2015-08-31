@@ -18,6 +18,12 @@
 //= require_tree .
 
 
+
+
+
+
+
+
 //ajaxsetup should never be inside document.ready
 $.ajaxSetup({
   beforeSend: function(xhr){
@@ -26,7 +32,10 @@ $.ajaxSetup({
 })
 
 $(document).ready(function(){
-
+  $(".mainLogo").fadeIn(1500);
+  $(".button").fadeIn(1500);
+  $(".headerPhoto").fadeIn(2000);
+  $(".headLine").fadeIn(2000);
   // $.ajax({
   //   type: 'GET',
   //   url: 'http://localhost:3000/api/ships',
