@@ -106,7 +106,7 @@
 
 .infoDiv2 {
   width: 40%;
-  height: 410px;
+  height: auto;
   background-color: white;
   margin-top: 1%;
   margin-left: 1%;
@@ -233,5 +233,22 @@ hr {
 :hover.button {
   background-color: rgba(39, 35, 49, .6);
   color: #E7DBD1;
+}
 
+.shipName {
+  text-align: center;
+  font-family: 'Abel' sans-serif;
+  color: #505F69;
+  font-size: 1.5vw;
+}
+
+.shipDesc {
+  text-align: center;
+  font-family: 'Abel' sans-serif;
+  color: #505F69;
+  font-size: 1.5vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 10%;
 }

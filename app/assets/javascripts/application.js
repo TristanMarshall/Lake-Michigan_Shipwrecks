@@ -17,35 +17,95 @@
 //= require backbone
 //= require_tree .
 
+////////////ajaxsetup should never be inside document.ready/////////////////////
 
-
-
-
-
-
-
-//ajaxsetup should never be inside document.ready
 $.ajaxSetup({
   beforeSend: function(xhr){
     xhr.setRequestHeader('Authorization', 'Token token=' + global.apiKey)
   }
-})
+});
+
+
+//////////////////////////Namespaces for Maps///////////////////////////////////
+
+  var app = app || {};
+  app.allShips = [];
+
 
 $(document).ready(function(){
-  $(".mainLogo").fadeIn(1500);
-  $(".button").fadeIn(1500);
-  $(".headerPhoto").fadeIn(2000);
-  $(".headLine").fadeIn(2000);
-  // $.ajax({
-  //   type: 'GET',
-  //   url: 'http://localhost:3000/api/ships',
-  //   dataType: 'json',
-  //   success: function(data){
-  //     console.log(data);
-  //   },
-  //   error: function(err){
-  //     console.log(err);
-  //   }
-  // })
 
+//////////////////////////jQuery Animations/////////////////////////////////////
+
+$(".mainLogo").fadeIn(1500);
+$(".button").fadeIn(1500);
+$(".headerPhoto").fadeIn(2000);
+$(".headLine").fadeIn(2000);
+
+///////////////////iterate through data/ make array of objects//////////////////
+
+app.mark = {
+  type: 'GET',
+  url: '/api/ships',
+  dataType: 'json',
+  success: function(data){
+    for (i=0; i < data.length; i++) {
+      app.ship = new Object();
+      app.ship = {
+        lat: parseFloat(data[i].latitude),
+        lng: parseFloat(data[i].longitude),
+        name: data[i].name,
+        description: data[i].description
+      };
+      app.allShips.push(app.ship);
+    }
+  }
+}
+$.ajax(app.mark);
+//
+
+
+///////////////////////////Google Map///////////////////////////////////////////
+
+function initMap() {
+  app.markers = [];
+  var myLatLng = {lat: 43.787, lng: -86.531};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 7,
+    center: myLatLng
+  });
+
+
+  for (var i = 0; i < app.allShips.length; i++) {
+
+    var coordinates = app.allShips[i];
+    var tempMarker = new google.maps.Marker({
+      position: coordinates,
+      map: map,
+      coordinateData: app.allShips[i]
+    });
+    app.markers.push(tempMarker);
+
+}
+
+for (var item in app.markers) {
+  var tempMarker = app.markers[item];
+  console.log(app.markers[item].coordinateData);
+
+  tempMarker.addListener('click', function() {
+    $('.shipName').html("");
+    $('.shipName').append(this.coordinateData.name);
+    $('.shipDesc').html("");
+    $('.shipDesc').append(this.coordinateData.description);
+  });
+
+}
+
+}
+
+
+google.maps.event.addDomListener(window, 'load', initMap);
+
+////////////////////////////////////////////////////////////////////////////////
+///end of document.ready
 });

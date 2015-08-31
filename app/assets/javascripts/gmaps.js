@@ -1,39 +1,40 @@
-/////////////////////////////////////////////////////////////////////
-function initMap() {
-  var mapCanvas = document.getElementById('map');
-  var mapOptions = {
-     center: new google.maps.LatLng(43.450101, -87.222019),
-     zoom: 7,
-     mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-    var map = new google.maps.Map(mapCanvas, mapOptions)
-
-  }
-    google.maps.event.addDomListener(window, 'load', initMap);
-
-
-    function initMap() {
-      var myLatLng = {lat: 43.787, lng: -86.531};
-
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 7,
-        center: myLatLng
-      });
-
-        var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Hello World!'
-      });
-    }
-
-
-
-
-
-//////BELOW FETCH DATA /////////////////////////////////////////////
-
-
+// /////////////////////////////////////////////////////////////////////
+//
+// var app = app || {};
+// app.myLatLan = [];
+//
+// /////////////////////////////////////////////////////////////////////
+// function initMap() {
+//   var mapCanvas = document.getElementById('map');
+//   var mapOptions = {
+//      center: new google.maps.LatLng(43.450101, -87.222019),
+//      zoom: 7,
+//      mapTypeId: google.maps.MapTypeId.ROADMAP
+//   }
+//     var map = new google.maps.Map(mapCanvas, mapOptions)
+//
+//   }
+//     google.maps.event.addDomListener(window, 'load', initMap);
+//
+//
+//     function initMap() {
+//       var myLatLng = {lat: 43.787, lng: -86.531};
+//
+//       var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 7,
+//         center: myLatLng
+//       });
+//
+//         var marker = new google.maps.Marker({
+//         position: myLatLng,
+//         map: map,
+//         title: 'Hello World!'
+//       });
+//     }
+//
+//
+//
+//
 // app.mark = {
 //   type: 'GET',
 //   url: '/api/ships',
@@ -45,10 +46,11 @@ function initMap() {
 //         latitude: parseFloat(data[i].latitude),
 //         longitude: parseFloat(data[i].longitude)
 //       };
+//       app.coordinate.push(app.latLong);
 //     }
 //   }
 // }
 //
 // $.ajax(app.mark);
-
-///////////////////////////////////////////////////////////////////////
+//
+// ///////////////////////////////////////////////////////////////////////
