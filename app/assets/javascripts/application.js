@@ -41,6 +41,11 @@ $(".button").fadeIn(1500);
 $(".headerPhoto").fadeIn(2000);
 $(".headLine").fadeIn(2000);
 
+$('.objs').hide();
+// $('.bold1').on('click', function() {
+//     $('.bold').show();
+// });
+
 ///////////////////iterate through data/ make array of objects//////////////////
 
 app.mark = {
@@ -54,7 +59,8 @@ app.mark = {
         lat: parseFloat(data[i].latitude),
         lng: parseFloat(data[i].longitude),
         name: data[i].name,
-        description: data[i].description
+        description: data[i].description,
+        yearlost: data[i].yearlost
       };
       app.allShips.push(app.ship);
     }
@@ -97,6 +103,8 @@ for (var item in app.markers) {
     $('.shipName').append(this.coordinateData.name);
     $('.shipDesc').html("");
     $('.shipDesc').append(this.coordinateData.description);
+    $('.shipDesc2').html("");
+    $('.shipDesc2').append(this.coordinateData.yearlost);
   });
 
 }

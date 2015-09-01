@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 # assign the http /resource that you want => (to) the controllerName#fileName
   get '/welcome' => 'ship#welcome'
 
+  get '/data' => 'ship#data'
+
 end

@@ -1,0 +1,26 @@
+<script type="text/javascript">
+var global = global || {};
+global.apiKey = '<%= @key %>';
+
+</script>
+
+<div class="infoDiv3">
+  <hr class="indexLine">
+  <img class="anchor1" src="/images/anchor.png" alt="" />
+  <h3 class="known">Shipwrecks of Lake Michigan with known coordinates</h3>
+  <hr class="indexLine">
+  <ul id="ship-list">
+    <li>some nonsense</li>
+    <!-- backbone collection will fill this $el -->
+  </ul>
+  <script type="text/template" id="wrecks">
+    <div class="objs">
+      <li class="wrecks">
+          <span class="bold1">Name of Wreck:</span> <%%=name%><br>
+          <span class="bold">Latitude:</span>  <%%=latitude%><br>
+          <span class="bold">Longitude:</span>  <%%=longitude%><br>
+          <span class="bold">Year lost:</span>  <%%=yearlost%> <br>
+          <span class="bold"> Description:</span>  <%%=description%></li><br>
+        </div>
+  </script>
+</div>

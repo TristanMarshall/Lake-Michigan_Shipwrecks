@@ -9,4 +9,8 @@ class ShipController < ApplicationController
   def welcome
 
   end
+
+  def data
+
+  end 
 end

@@ -1,10 +1,10 @@
 
 
-<script type="text/javascript">
-//Here a namespace is created in order to render our instance variable throughout our application (in JS)
+// <script type="text/javascript">
+// //Here a namespace is created in order to render our instance variable throughout our application (in JS)
   var global = global || {};
   global.apiKey = '<%= @key %>';
-</script>
+// </script>
 
 <header class="header">
   <img class="anchor3" src="/images/anchor.png" alt="" />
@@ -18,29 +18,19 @@
     <div id="map"></div>
   </div>
   <div class="infoDiv1"><h3 class="known1">Name of wreck</h3>
-    <hr>
+    <hr class="indexLine">
     <div class="shipName"></div>
   </div>
+  <div class="infoDiv2"><h3 class="known1">Year Lost</h3>
+    <hr class='indexLine'>
+    <div class="shipDesc2"></div>
+  </div>
   <div class="infoDiv2"><h3 class="known1">Description</h3>
-    <hr>
+    <hr class="indexLine">
     <div class="shipDesc"></div>
   </div>
-  <div class="infoDiv3">
-    <hr>
-    <img class="anchor1" src="/images/anchor.png" alt="" />
-    <h3 class="known">Shipwrecks of Lake Michigan with known coordinates</h3>
-    <hr>
-    <ul id="ship-list">
-      <li>some nonsense</li>
-      <!-- backbone collection will fill this $el -->
-    </ul>
-    <script type="text/template" id="wrecks">
-      <li class="wrecks">
-        <span class="bold">Name of Wreck:</span> <%%=name%><br>
-        <span class="bold">Latitude:</span>  <%%=latitude%><br>
-        <span class="bold">Longitude:</span>  <%%=longitude%><br>
-        <span class="bold">Year lost:</span>  <%%=yearlost%> <br>
-        <span class="bold"> Description:</span>  <%%=description%></li><br>
-    </script>
-  </div>
+<hr class="indexLine">
+
+
+
 </div>

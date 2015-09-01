@@ -25,7 +25,7 @@
 .yieldDiv {
   background-color: rgba(255, 255, 255, 0.7);
   width: 90%;
-  height: 1500px;
+  height: 550px;
   padding-bottom: 3%;
   padding-top: 4%;
   margin-left: 5%;
@@ -46,21 +46,21 @@
 }
 
 .anchor3 {
-  width: 3%;
+  width: 2%;
   height: auto;
-  margin-left: 8.4%;
+  margin-left: 9.3%;
   margin-right: 1%;
   margin-top: 1%;
-  margin-bottom: 4.3%;
+  margin-bottom: 3.6%;
 }
 
 .anchor4 {
-  width: 3%;
+  width: 2%;
   height: auto;
   margin-left: 25.3%;
   margin-right: 1%;
   margin-top: 1%;
-  margin-bottom: 4.3%;
+  margin-bottom: 3.6%;
 }
 
 .headerPhoto {
@@ -81,38 +81,39 @@
 }
 
 #map {
-  width: 45%;
-  height: 550px;
+  width: 60%;
+  height: 500px;
   background-color: white;
   margin-top: -2%;
   margin-right: 1%;
-  margin-left: 3.5%;
+  margin-bottom: 4%;
+  margin-left: 2.4%;
   float: left;
   border: 15px solid rgb(230, 230, 230);
-  box-shadow: 9px 9px 2px rgba(0, 0, 0, .2);
+  box-shadow: 9px 9px 2px rgba(0, 0, 0, .09)
 
 }
 
 .infoDiv1 {
-  width: 40%;
-  height: 100px;
+  width: 25%;
+  height: auto;
   background-color: white;
   margin-top: -2%;
   margin-left: 1%;
   float: left;
   border: 15px solid rgb(230, 230, 230);
-  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .2);
+  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .09);
 }
 
 .infoDiv2 {
-  width: 40%;
+  width: 25%;
   height: auto;
   background-color: white;
   margin-top: 1%;
   margin-left: 1%;
   float: left;
   border: 15px solid rgb(230, 230, 230);
-  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .2);
+  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .09);
 }
 
 .infoDiv3 {
@@ -127,7 +128,14 @@
   padding-top: 2%;
   padding-left: 2%;
   border: 15px solid rgb(230, 230, 230);
-  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .2);
+  box-shadow: inset 0 0 10px rgb(200, 200, 200), 9px 9px 2px rgba(0, 0, 0, .09);
+}
+
+.indexLine {
+  margin-left: 5.2%;
+  margin-top: 1%;
+  height: 2px;
+
 }
 
 .known {
@@ -153,13 +161,13 @@
 hr {
   width: 90%;
   margin-right: 6%;
-  height: 3px;
+  height: 2px;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
 }
 
 .headLine {
-  height: 4px;
+  height: 2px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
@@ -240,6 +248,10 @@ hr {
   font-family: 'Abel' sans-serif;
   color: #505F69;
   font-size: 1.5vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 4%;
 }
 
 .shipDesc {
@@ -250,5 +262,20 @@ hr {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 10%;
-  padding-top: 10%;
+  padding-top: 4%;
+}
+
+.shipDesc2 {
+  text-align: center;
+  font-family: 'Abel' sans-serif;
+  color: #505F69;
+  font-size: 1.5vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 4%;
+}
+
+#extra {
+  display: none;
 }
