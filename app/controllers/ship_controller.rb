@@ -11,6 +11,6 @@ class ShipController < ApplicationController
   end
 
   def data
-
-  end 
+    @key = ENV['API_KEY']
+  end
 end
