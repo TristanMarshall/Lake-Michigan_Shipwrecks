@@ -59,14 +59,14 @@ app.collectionView = Backbone.View.extend({
 //end of blueprints
 
 //once the page has finished loading...
-$(document).ready(function(){
+// $(document).ready(function(){
 
 //instantiate collection + collectionView
-active.collection = new app.collection();
-active.collectionView = new app.collectionView({
-  collection: active.collection,
-  el: $('#ship-list')
-  });
-});
+// active.collection = new app.collection();
+// active.collectionView = new app.collectionView({
+//   collection: active.collection,
+//   el: $('#ship-list')
+//   });
+// });
 
 ///////////////////////////////////////////////////////////////////

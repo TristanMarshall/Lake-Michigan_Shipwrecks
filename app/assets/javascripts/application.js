@@ -40,6 +40,8 @@ $(".mainLogo").fadeIn(1500);
 $(".button").fadeIn(1500);
 $(".headerPhoto").fadeIn(2000);
 $(".headLine").fadeIn(2000);
+$(".welcomeQuote").fadeIn(3000);
+
 
 $('.objs').hide();
 // $('.bold1').on('click', function() {
@@ -115,5 +117,12 @@ for (var item in app.markers) {
 google.maps.event.addDomListener(window, 'load', initMap);
 
 ////////////////////////////////////////////////////////////////////////////////
+
+active.collection = new app.collection();
+active.collectionView = new app.collectionView({
+  collection: active.collection,
+  el: $('#ship-list')
+  });
+
 ///end of document.ready
 });
