@@ -7,7 +7,7 @@
 
 ##### Lake Michigan Shipwrecks allows the user to do the following:
 * Interact with a Google Map
-* Interact with Google Map Markers that when clicked, render data of into page.
+* Interact with Google Map Markers that when clicked, render data into page.
 * View a rendered list of data of all known Shipwrecks in Lake Michigan.
 
 ## Technologies used in creating this site:
@@ -22,7 +22,7 @@
 * Active Record
 * Backbone
 * Inkscape
-* Google Maps 
+* Google Maps
 
 *Google Fonts used on this website (Cinzel & Abel)*
 
