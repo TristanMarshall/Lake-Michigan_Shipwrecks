@@ -41,13 +41,13 @@
 
 ### The site includes 3 .erb pages:
 
-![alt image](http://i.imgur.com/yYk130B.jpg)
+![alt image](http://i.imgur.com/cSgwgh2.jpg)
 * Welcome (welcome.html.erb)
 
-![](http://i.imgur.com/eZcHxz7.png)
+![](http://i.imgur.com/83Ob4ao.jpg)
 * Home (index.html.erb)
 
-
+![](http://i.imgur.com/p0QJjsN.png)
 * Data (data.html.erb)
 
 ###Application Layout
